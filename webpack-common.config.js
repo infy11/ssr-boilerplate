@@ -7,7 +7,9 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = () => {
   return ({
-    entry: ['./src/client/index'],
+    entry:{
+      app : './src/client/index'
+    },
     output: {
       path: path.resolve(__dirname, "public"),
       publicPath: "",
@@ -30,8 +32,8 @@ module.exports = () => {
     },
     plugins: [new CleanWebpackPlugin(), new LoadablePlugin(), new ProgressBarPlugin(),
       new WorkboxPlugin.InjectManifest({
-        swSrc: "./src/sw.js",
-        swDest: "sw.js"
+        swSrc: path.resolve(__dirname, 'src') + "/sw.js",
+        swDest: path.resolve(__dirname, 'dist')+ "/service-worker.js"
       })
     ]
   });
