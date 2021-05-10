@@ -1,21 +1,21 @@
 {
-  "hash": "376b7bf28a43f0f51228",
+  "hash": "14223cb9b5fc2eef8ce3",
   "version": "5.36.2",
   "publicPath": "",
-  "outputPath": "/home/varnit/learning_ssr/public",
+  "outputPath": "/Users/varnitgoyal/ssr-boilerplate/public",
   "assetsByChunkName": {
-    "app": [
-      "app.js"
+    "main": [
+      "main.js"
     ],
-    "pages-About": [
-      "pages-About.js"
+    "about": [
+      "about.js"
     ]
   },
   "assets": [
     {
       "type": "asset",
-      "name": "app.js",
-      "size": 1329988,
+      "name": "main.js",
+      "size": 3212010,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -23,14 +23,14 @@
         "javascriptModule": false
       },
       "chunkNames": [
-        "app"
+        "main"
       ],
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
       "related": {},
       "chunks": [
-        "app"
+        "main"
       ],
       "auxiliaryChunks": [],
       "isOverSizeLimit": false
@@ -38,7 +38,7 @@
     {
       "type": "asset",
       "name": "vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js.js",
-      "size": 14449,
+      "size": 29672,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -60,8 +60,8 @@
     },
     {
       "type": "asset",
-      "name": "pages-About.js",
-      "size": 4714,
+      "name": "about.js",
+      "size": 5383,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -69,28 +69,47 @@
         "javascriptModule": false
       },
       "chunkNames": [
-        "pages-About"
+        "about"
       ],
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
       "related": {},
       "chunks": [
-        "pages-About"
+        "about"
       ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "sw.js",
+      "size": 907,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
       "auxiliaryChunks": [],
       "isOverSizeLimit": false
     }
   ],
   "entrypoints": {
-    "app": {
-      "name": "app",
+    "main": {
+      "name": "main",
       "chunks": [
-        "app"
+        "main"
       ],
       "assets": [
         {
-          "name": "app.js"
+          "name": "main.js"
         }
       ],
       "filteredAssets": 0,
@@ -104,14 +123,14 @@
     }
   },
   "namedChunkGroups": {
-    "app": {
-      "name": "app",
+    "main": {
+      "name": "main",
       "chunks": [
-        "app"
+        "main"
       ],
       "assets": [
         {
-          "name": "app.js"
+          "name": "main.js"
         }
       ],
       "filteredAssets": 0,
@@ -123,8 +142,8 @@
       "childAssets": {},
       "isOverSizeLimit": false
     },
-    "pages-home": {
-      "name": "pages-home",
+    "home": {
+      "name": "home",
       "chunks": [],
       "assets": [],
       "filteredAssets": 0,
@@ -136,18 +155,18 @@
       "childAssets": {},
       "isOverSizeLimit": false
     },
-    "pages-About": {
-      "name": "pages-About",
+    "about": {
+      "name": "about",
       "chunks": [
         "vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js",
-        "pages-About"
+        "about"
       ],
       "assets": [
         {
           "name": "vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js.js"
         },
         {
-          "name": "pages-About.js"
+          "name": "about.js"
         }
       ],
       "filteredAssets": 0,
@@ -162,7 +181,98 @@
   },
   "errors": [],
   "errorsCount": 0,
-  "warnings": [],
-  "warningsCount": 0,
-  "children": []
+  "warnings": [
+    {
+      "message": "main.js is 3.21 MB, and won't be precached. Configure maximumFileSizeToCacheInBytes to change this limit.",
+      "stack": "Error: main.js is 3.21 MB, and won't be precached. Configure maximumFileSizeToCacheInBytes to change this limit.\n    at module.exports (/Users/varnitgoyal/ssr-boilerplate/node_modules/workbox-webpack-plugin/build/lib/get-manifest-entries-from-compilation.js:218:31)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async InjectManifest.addAssets (/Users/varnitgoyal/ssr-boilerplate/node_modules/workbox-webpack-plugin/build/inject-manifest.js:301:9)"
+    }
+  ],
+  "warningsCount": 1,
+  "children": [
+    {
+      "name": "InjectManifest",
+      "hash": "3d0b9de90c57a40b4906",
+      "version": "5.36.2",
+      "builtAt": 1620658165666,
+      "publicPath": "",
+      "outputPath": "/Users/varnitgoyal/ssr-boilerplate/public",
+      "assetsByChunkName": {
+        "InjectManifest": [
+          "sw.js"
+        ]
+      },
+      "assets": [
+        {
+          "type": "asset",
+          "name": "sw.js",
+          "size": 719,
+          "emitted": false,
+          "comparedForEmit": false,
+          "cached": true,
+          "info": {
+            "javascriptModule": false
+          },
+          "chunkNames": [
+            "InjectManifest"
+          ],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [
+            "InjectManifest"
+          ],
+          "auxiliaryChunks": [],
+          "isOverSizeLimit": false
+        }
+      ],
+      "entrypoints": {
+        "InjectManifest": {
+          "name": "InjectManifest",
+          "chunks": [
+            "InjectManifest"
+          ],
+          "assets": [
+            {
+              "name": "sw.js"
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": null,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "namedChunkGroups": {
+        "InjectManifest": {
+          "name": "InjectManifest",
+          "chunks": [
+            "InjectManifest"
+          ],
+          "assets": [
+            {
+              "name": "sw.js"
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": null,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "errors": [],
+      "errorsCount": 0,
+      "warnings": [],
+      "warningsCount": 0,
+      "children": []
+    }
+  ]
 }

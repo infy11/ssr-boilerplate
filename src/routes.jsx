@@ -3,10 +3,10 @@ import React from "react";
 import { Route, Switch } from "react-router";
 import loadable from "@loadable/component";
 
-const Home = loadable(() => import("./pages/home"), {
+const Home = loadable(() => import(/* webpackChunkName: "home" */"./pages/home"), {
   fallback: <div>loading...</div>,
 });
-const About = loadable(() => import("./pages/About"), {
+const About = loadable(() => import(/* webpackChunkName: "about" */"./pages/About"), {
   fallback: <div>loading...</div>,
 });
 

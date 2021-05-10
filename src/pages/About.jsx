@@ -16,8 +16,7 @@ const About = () => {
 
   return (
     <div>
-  <div css={styles}>Hi From Abo
-  ut</div>
+  <div css={styles}>Hi From Abo</div>
   <StyledComponent>
     blue text
   </StyledComponent>
