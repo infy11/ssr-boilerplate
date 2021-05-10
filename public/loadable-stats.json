@@ -1,0 +1,168 @@
+{
+  "hash": "376b7bf28a43f0f51228",
+  "version": "5.36.2",
+  "publicPath": "",
+  "outputPath": "/home/varnit/learning_ssr/public",
+  "assetsByChunkName": {
+    "app": [
+      "app.js"
+    ],
+    "pages-About": [
+      "pages-About.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "app.js",
+      "size": 1329988,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [
+        "app"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "app"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js.js",
+      "size": 14449,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [],
+      "chunkIdHints": [
+        "vendors"
+      ],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "pages-About.js",
+      "size": 4714,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [
+        "pages-About"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "pages-About"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "entrypoints": {
+    "app": {
+      "name": "app",
+      "chunks": [
+        "app"
+      ],
+      "assets": [
+        {
+          "name": "app.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "app": {
+      "name": "app",
+      "chunks": [
+        "app"
+      ],
+      "assets": [
+        {
+          "name": "app.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "pages-home": {
+      "name": "pages-home",
+      "chunks": [],
+      "assets": [],
+      "filteredAssets": 0,
+      "assetsSize": 0,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "pages-About": {
+      "name": "pages-About",
+      "chunks": [
+        "vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js",
+        "pages-About"
+      ],
+      "assets": [
+        {
+          "name": "vendors-node_modules_emotion_styled_base_dist_emotion-styled-base_browser_esm_js.js"
+        },
+        {
+          "name": "pages-About.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}
