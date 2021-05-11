@@ -6,7 +6,7 @@ const Home = () => {
 
   return (
     <button onClick={() => alert('Hello world')}>
-      Click Me
+      Click me
     </button>
   )
 };

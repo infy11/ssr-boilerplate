@@ -6,9 +6,11 @@ import path from "path";
 import { StaticRouter } from "react-router";
 import { ChunkExtractor } from "@loadable/server";
 
+
 const statsFile = path.resolve("public/loadable-stats.json");
 
 const app = express();
+
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static("public"));

@@ -14,5 +14,5 @@
     "@emotion/babel-preset-css-prop"
 
   ],
-  "plugins": ["@emotion","@loadable/babel-plugin"]
+  "plugins": ["react-hot-loader/babel","@emotion","@loadable/babel-plugin"]
 }

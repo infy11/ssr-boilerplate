@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <div>
-  <div css={styles}>Hi From Abo</div>
+  <div css={styles}>Hi From About dd</div>
   <StyledComponent>
     blue text
   </StyledComponent>

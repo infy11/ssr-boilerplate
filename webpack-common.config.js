@@ -3,7 +3,7 @@ const path = require("path");
 const LoadablePlugin = require("@loadable/webpack-plugin");
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
-
+const webpack = require('webpack');
 
 module.exports = () => {
   return ({
@@ -33,7 +33,7 @@ module.exports = () => {
     plugins: [new CleanWebpackPlugin(), new LoadablePlugin(), new ProgressBarPlugin(),
       new WorkboxPlugin.InjectManifest({
         swSrc: path.resolve(__dirname, 'src') + "/sw.js",
-        swDest: path.resolve(__dirname, 'dist')+ "/service-worker.js"
+        swDest: path.resolve(__dirname, 'public')+ "/service-worker.js"
       })
     ]
   });

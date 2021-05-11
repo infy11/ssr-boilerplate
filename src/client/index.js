@@ -1,6 +1,8 @@
+import 'react-hot-loader'
+import { AppContainer } from 'react-hot-loader';
 import React from "react";
-import { hydrate } from "react-dom";
-import { App } from "../components/App";
+import { hydrate, render } from "react-dom";
+import {App}  from "../components/App";
 import { BrowserRouter } from "react-router-dom";
 import { loadableReady } from "@loadable/component";
 
@@ -15,11 +17,14 @@ if ('serviceWorker' in navigator) {
 };
 
 
+const renderer = window.__shell__ ? hydrate : render
 loadableReady(() => {
-    hydrate(
+    renderer(
+        <AppContainer>
         <BrowserRouter>
             <App />
-        </BrowserRouter>,
+        </BrowserRouter>
+        </AppContainer>,
         document.getElementById("react-root")
     );
 });
